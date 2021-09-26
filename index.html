@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부가세, 증감률 계산기</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body class="body">
+    <h1 id="caltitle">계산기</h1>
+    <div class="pricing__toggler">
+            <label class="switch">
+          <input id="checkbox" type="checkbox">
+          <span class="slider"></span> 
+        </label>
+      </div>
+    
+      <!-- 부가세, 세액 계산 -->
+    <div id="vat">
+        <h4>TOTAL</h4>
+        <input type="text" name="" id="total" placeholder="0" onkeyup="inputNumberFormat()">
+        <input type="button" value="CAL" id="btn1">
+        <input type="button" value="DEL" id="btn2">
+        <div class="box1">
+                <h3 id="title1">Value of Supply (공급가액)</h3>
+                <div id="supply">0</div>
+                <h3 id="title2">Tax (세액)</h3>
+                <div id="tax">0</div>
+        </div>
+    </div>
+
+        <!-- 총액, 세액 계산 -->
+    <div id="vat2">
+        <h4>Value of Supply (공급가액)</h4>
+        <input type="text" name="" id="total2" placeholder="0" onkeyup="inputNumberFormat()">
+        <input type="button" value="CAL" id="btn5">
+        <input type="button" value="DEL" id="btn6">
+        <div class="box4">
+                <h3 id="title5">Total (총액)</h3>
+                <div id="supply2">0</div>
+                <h3 id="title6">Tax (세액)</h3>
+                <div id="tax2">0</div>
+        </div>
+    </div>
+
+     <!-- 증감률 계산 -->
+    <div id="rate">
+        <h4>Initial Price (최초금액)</h4>
+        <input type="text" name="" id="initial" placeholder="0">
+        <h4>Change Price (변경금액)</h4>
+        <input type="text" name="" id="change" placeholder="0">
+        <input type="button" value="CAL" id="btn3">
+        <input type="button" value="DEL" id="btn4">
+        <div class="box2">
+            <h4 id="title3">Rate Of Change (증감률)</h4>
+            <div id="changeprice">0%</div>
+        </div>
+        <div class="box3">
+            <h4 id="title4">Difference (차액)</h4>
+            <div id="differ">0</div>
+        </div>
+        
+    </div>
+</body>
+</html>

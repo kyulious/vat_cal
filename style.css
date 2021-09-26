@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Poor+Story&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.body{
+    font-family: 'Poor Story', cursive;
+    background-color: rgb(163, 218, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.body >h1{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 30px;
+    color: rgb(53, 144, 156);
+    font-size: 40px;
+}
+/* 토글 */
+.pricing__toggler{
+    display: flex;
+    padding-left:300px;
+    padding-top: 20px;
+}
+
+.pricing__toggler >div{
+    line-height: 2.8rem;
+    font-weight: bolder;
+    font-size: 22px;
+}
+.pricing__toggler #dark{
+    opacity: 0.5;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    margin: 0 15px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(114, 114, 114);
+    transition: .4s;
+    border-radius: 16px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(33px);
+  }
+
+#vat{
+    border: 1px solid rgb(193, 235, 255);
+    background-color: rgb(245, 252, 253);
+    border-radius: 8px;
+    width: 500px;
+    height: 320px;
+    margin-top: 40px;
+}
+#vat>h4{
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#vat #total{
+    width: 270px;
+    height: 40px;
+    margin-top: 10px;
+    text-align: right;
+    border-radius: 6px;
+    outline: none;
+    padding-right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    margin-left: 20px;
+    background-color: rgb(230, 247, 255);
+}
+#vat #total::placeholder{
+    float: right;
+    font-size: 25px;
+    color: rgb(194, 193, 193);
+    font-weight: bolder;
+    padding-right: 10px;
+    padding-top: 4px;
+}
+#vat #btn1{
+    width: 70px;
+    border: none;
+    height: 40px;
+    outline: none;
+    border-radius: 6px;
+    background-color: rgb(163, 218, 228);
+    font-size: 25px;
+    color: rgb(53, 144, 156);
+    margin-left: 20px;
+    cursor: pointer;
+}
+#vat #btn2{
+    width: 70px;
+    border: none;
+    height: 40px;
+    outline: none;
+    border-radius: 6px;
+    background-color: rgb(163, 218, 228);
+    font-size: 25px;
+    color: rgb(53, 144, 156);
+    margin-left: 10px;
+    cursor: pointer;
+}
+.box1{
+    color: #fff;
+    padding-left: 10px;
+    background-color: rgb(53, 144, 156);
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border: 1px solid rgb(53, 144, 156);
+    width: 450px;
+    border-radius: 6px;
+    font-weight: bolder;
+    height: 160px;
+}
+.box1>h3{
+    color: rgb(163, 218, 228);
+    font-size: 18px;
+}
+.box1>div{
+    font-size: 38px;
+}
+
+
+/* 총액 계산 */
+#vat2{
+    border: 1px solid rgb(193, 235, 255);
+    background-color: rgb(245, 252, 253);
+    border-radius: 8px;
+    width: 500px;
+    height: 320px;
+    margin-top: 40px;
+}
+#vat2>h4{
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#vat2 #total2{
+    width: 270px;
+    height: 40px;
+    margin-top: 10px;
+    text-align: right;
+    border-radius: 6px;
+    outline: none;
+    padding-right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    margin-left: 20px;
+    background-color: rgb(230, 247, 255);
+}
+#vat2 #total2::placeholder{
+    float: right;
+    font-size: 25px;
+    color: rgb(194, 193, 193);
+    font-weight: bolder;
+    padding-right: 10px;
+    padding-top: 4px;
+}
+#vat2 #btn5{
+    width: 70px;
+    border: none;
+    height: 40px;
+    outline: none;
+    border-radius: 6px;
+    background-color: rgb(163, 218, 228);
+    font-size: 25px;
+    color: rgb(53, 144, 156);
+    margin-left: 20px;
+    cursor: pointer;
+}
+#vat2 #btn6{
+    width: 70px;
+    border: none;
+    height: 40px;
+    outline: none;
+    border-radius: 6px;
+    background-color: rgb(163, 218, 228);
+    font-size: 25px;
+    color: rgb(53, 144, 156);
+    margin-left: 10px;
+    cursor: pointer;
+}
+.box4{
+    color: #fff;
+    padding-left: 10px;
+    background-color: rgb(53, 144, 156);
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border: 1px solid rgb(53, 144, 156);
+    width: 450px;
+    border-radius: 6px;
+    font-weight: bolder;
+    height: 160px;
+}
+.box4>h3{
+    color: rgb(163, 218, 228);
+    font-size: 18px;
+}
+.box4>div{
+    font-size: 38px;
+}
+
+#rate{
+    border: 1px solid rgb(193, 235, 255);
+    background-color: rgb(245, 252, 253);
+    border-radius: 8px;
+    width: 500px;
+    height: 320px;
+    margin-top: 40px;
+    font-family: 'Poor Story', cursive;
+}
+
+#rate>h4{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#rate #initial{
+    width: 270px;
+    height: 40px;
+    margin-top: 10px;
+    text-align: right;
+    border-radius: 6px;
+    outline: none;
+    padding-right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    margin-left: 20px;
+    background-color: rgb(230, 247, 255);
+}
+#rate #initial::placeholder{
+    float: right;
+    font-size: 25px;
+    color: rgb(194, 193, 193);
+    font-weight: bolder;
+    padding-right: 10px;
+    padding-top: 4px;
+}
+#rate #change{
+    width: 270px;
+    height: 40px;
+    margin-top: 10px;
+    text-align: right;
+    border-radius: 6px;
+    outline: none;
+    padding-right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    margin-left: 20px;
+    background-color: rgb(230, 247, 255);
+}
+#rate #change::placeholder{
+    float: right;
+    font-size: 25px;
+    color: rgb(194, 193, 193);
+    font-weight: bolder;
+    padding-right: 10px;
+    padding-top: 4px;
+}
+#rate #btn3{
+    width: 70px;
+    border: none;
+    height: 40px;
+    outline: none;
+    border-radius: 6px;
+    background-color: rgb(163, 218, 228);
+    font-size: 25px;
+    color: rgb(53, 144, 156);
+    margin-left: 20px;
+    cursor: pointer;
+}
+#rate #btn4{
+    width: 70px;
+    border: none;
+    height: 40px;
+    outline: none;
+    border-radius: 6px;
+    background-color: rgb(163, 218, 228);
+    font-size: 25px;
+    color: rgb(53, 144, 156);
+    margin-left: 10px;
+    cursor: pointer;
+}
+.box2{
+    float: left;
+    color: #fff;
+    padding-left: 10px;
+    background-color:rgb(53, 144, 156);
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid rgb(53, 144, 156);
+    width: 210px;
+    border-radius: 6px;
+    font-weight: bolder;
+    height: 80px;
+    
+}
+.box2 >h4{
+    color: rgb(163, 218, 228);
+    font-size: 18px;
+    padding-top: 5px;
+    
+}
+.box2 #changeprice{
+    font-size: 35px;
+}
+.box3{
+    color: #fff;
+    padding-left: 10px;
+    background-color: rgb(53, 144, 156);
+    margin-left: 260px;
+    margin-top: 20px;
+    border: 1px solidrgb(53, 144, 156);
+    width: 210px;
+    border-radius: 6px;
+    font-weight: bolder;
+    height: 80px;
+}
+.box3 >h4{
+    color: rgb(163, 218, 228);
+    font-size: 18px;
+    padding-top: 5px;
+}
+.box3 #differ{
+    font-size: 38px;
+}
